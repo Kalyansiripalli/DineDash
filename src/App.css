@@ -1,0 +1,192 @@
+/* 
+
+.AppLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.navitems{
+  width: 50%;
+}
+.navitems > ul {
+  display: flex;
+  font-size: 18px;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.loginDiv{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.login-logout-btn {
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin: 0px 30px;
+  padding: 10px 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: aquamarine;
+}
+
+.login-logout-btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+.resCard {
+  width: 250px;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.shimmercard {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #eee 40%, #fafafa 50%, #eee 60%);
+  background-size: 300%;
+  background-position-x: -100%;
+}
+.resCard > p {
+  font-size: 15px;
+  color: lightslategray;
+}
+
+.resCard:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.res-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shimmer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.FiltersDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+.TopRatedBtn {
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: aquamarine;
+}
+
+.TopRatedBtn:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+.searchBar{
+  height: 30px;
+  border-radius: 10px;
+}
+
+.searchBtn {
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  margin: 0px 10px
+}
+
+.searchBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.errorPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.errorImage{
+  width: 40%;
+}
+
+.individualResturantDiv{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+.resturantBanner{
+  display: flex;
+  width:80vw;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resturantBanner p{
+  color: #383737cb;
+}
+
+.menuDiv{
+  width:80vw;
+  height: 30vh;
+  margin: 0px auto;
+
+}
+
+.ratingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(233, 248, 239);
+  border-radius: 20px;
+}
+
+.ratingDiv h4 {
+  margin: 0;
+}
+
+.ratingDiv p{
+  margin: 0;
+  color: #383737cb;
+}
+
+ */
