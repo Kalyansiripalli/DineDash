@@ -1,9 +1,13 @@
 import React from "react";
 import { Button, Modal } from "antd";
 import { Link } from "react-router-dom";
+import { clearCartItems } from "../utils/slices/cartSlice";
+import { useDispatch } from "react-redux";
+import orderConfirm from "../utils/order-confirmation.jpg"
 const OrderConfirmationModal = () => {
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
+  const dispatch = useDispatch();
   const showLoading = () => {
     setOpen(true);
     setLoading(true);
@@ -12,6 +16,9 @@ const OrderConfirmationModal = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
+  };
+  const clearCartClick = () => {
+    dispatch(clearCartItems());
   };
   return (
     <>
@@ -25,19 +32,27 @@ const OrderConfirmationModal = () => {
         Open Modal
       </Button> */}
       <Modal
-        title={<p>Loading Modal</p>}
+        title={<p>Order Confirmed</p>}
         footer={
-          <Button type="primary" onClick={showLoading}>
-            Reload
+          <Link to="/">
+            <Button type="primary" onClick={()=>{
+            setOpen(false)
+            clearCartClick()
+            }}>
+            Okay👍🏻
           </Button>
+          </Link>
         }
         loading={loading}
         open={open}
         onCancel={() => setOpen(false)}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <img src={orderConfirm} alt="" />
+        <div className="flex flex-col items-center">
+        <p className="font-semibold text-orange-500 text-lg">Thanks for ordering on DineDash! 🎉</p>
+        <p className=" font-semibold text-orange-500 text-md">Kick back and enjoy—your delicious meal is on its way! 🍽️😎</p>
+        </div>
+        
       </Modal>
     </>
   );
