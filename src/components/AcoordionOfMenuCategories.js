@@ -33,7 +33,7 @@ const AccordionOfMenuCategories = (props) => {
             </div>
           ))}
       </div>
-      <div className="p-1 bg-gray-200"></div>
+      <hr className="bg-gray-300" />
     </>
   );
 };
